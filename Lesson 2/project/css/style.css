@@ -1,0 +1,128 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+    box-sizing: border-box;
+    background-color: grey;
+
+    position: relative;
+}
+
+.logo {
+    display: block;
+    width: 32px;
+    height: 28px;
+    background-image: url("../img/decorate/logo.png");
+    background-size: contain;
+    transition: 0.3s ease-in-out;
+}
+
+.bag {
+    width: 18px;
+    height: 24px;
+    background-color: transparent;
+    background-image: url("../img/decorate/bag.png");
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover,
+.bag:hover {
+    transform: scale(1.1);
+}
+
+.logo:active,
+.bag:active {
+    transform: scale(1);
+}
+
+/* Карточки товаров */
+
+.products {
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    border: 1px solid black;
+
+    border-radius: 10px;
+}
+
+.product-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+
+    margin: 0 0 15px 0;
+}
+
+.product-img {
+    margin: 0 0 15px 0;
+}
+
+.product-price {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+
+    margin: 0 0 15px 0;
+}
+
+.buyBtn {
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+
+    background-color: black;
+    border: 1px solid #fff;
+
+    transition: 0.3s;
+}
+
+.buyBtn:hover {
+    transform: scale(1.1);
+}
+
+.buyBtn:active {
+    transform: scale(1);
+
+    color: black;
+
+    background-color: #fff;
+    border: 1px solid black;
+}

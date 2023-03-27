@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Burger</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Выберите размер бургера:</legend>
+            <input type="radio" name="size" id="size_1" value="big" required>
+            <label for="size_1">Большой</label>
+            <br>
+            <input type="radio" name="size" id="size_2" value="small" required>
+            <label for="size_2">Малый</label>
+        </fieldset>
+        <fieldset>
+            <legend>Выберите второй ингредиент:</legend>
+            <input type="radio" name="extra" id="extra_1" value="salad" required>
+            <label for="extra_1">Салат</label>
+            <br>
+            <input type="radio" name="extra" id="extra_2" value="cheese" required>
+            <label for="extra_2">Сыр</label>
+            <br>
+            <input type="radio" name="extra" id="extra_3" value="potato" required>
+            <label for="extra_3">Картофель</label>
+        </fieldset>
+        <fieldset>
+            <legend>Выберите дополнительные ингредиенты:</legend>
+            <input type="checkbox" name="souse" id="souse_1" value="grass">
+            <label for="souse_1">Приправа</label>
+            <br>
+            <input type="checkbox" name="souse" id="souse_2" value="mayou">
+            <label for="souse_2">Майонез</label>
+        </fieldset>
+    </form>
+    <button class="button">Расчитать сумму заказа</button>
+    <div class="hidden">Сумма вашего заказа составляет: <span class="totalPrice"></span> руб.</div>
+    <div class="hidden">Калорийность вашего заказа составляет: <span class="totalCalories"></span> ккал.</div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
